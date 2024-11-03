@@ -14,14 +14,14 @@ const ProjectSection = () => {
 
   useEffect(() => {
     const autoScroll = setInterval(() => {
-      scrollBy(300); // Scroll right every 3 seconds
+      scrollBy(340); // Scroll right every 3 seconds
     }, 3000);
     return () => clearInterval(autoScroll); // Cleanup the interval on unmount
   }, []);
 
   return (
     <>
-        <div className="container mx-auto px-4 py-8 h-screen pt-24">
+        <div className="container mx-auto px-4 py-8 h-screen md:pt-24">
         <div className="flex items-center space-x-2 mt-4 mb-4">
             <FontAwesomeIcon icon={faPlay} className="text-gray-600" />  {/* Replace <i> with FontAwesomeIcon */}
             <span className="text-gray-600 uppercase text-sm tracking-widest">Recent Projects</span>
@@ -36,7 +36,7 @@ const ProjectSection = () => {
         <div className="mt-8 flex items-center space-x-4" style={{ height: '300px' }}>
             <button
             onClick={() => scrollBy(-300)}
-            className="bg-white text-gray-600 p-4 border border-gray-300"
+            className="bg-white text-gray-600 p-4 border border-gray-300 hidden md:block"
             >
             <FontAwesomeIcon icon={faArrowLeft} />  {/* Use FontAwesomeIcon */}
             </button>
@@ -92,7 +92,7 @@ const ProjectSection = () => {
             </div>
             <button
             onClick={() => scrollBy(300)}
-            className="bg-white text-gray-600 p-4 border border-gray-300"
+            className="bg-white text-gray-600 p-4 border border-gray-300 hidden md:block"
             >
             <FontAwesomeIcon icon={faArrowRight} className='slide' />  {/* Use FontAwesomeIcon */}
             </button>

@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-gray-100 py-8">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-start">
-          <div className="flex items-center space-x-4">
+          <div className="items-center space-x-4 hidden md:flex">
             <img src='/OutsourceNow.png' className='h-10'/>
             {/* <div className="text-sm text-gray-700">
               <p>Outsource Now</p>
