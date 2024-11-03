@@ -7,6 +7,9 @@ import HeroSection from './components/herosection/Herosection.jsx';
 import Servicesection from './components/servicesection/Servicesection.jsx';
 import AboutSection from './components/aboutsection/Aboutsection.jsx';
 import ProjectSection from './components/projectsection/Projectsection.jsx';
+import ServicePage from './components/servicespage/ServicePage.jsx';
+import ProjectsPage from './components/projectpage/ProjectPage.jsx';
+import AboutPage from './components/aboutuspage/AboutPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,19 +28,19 @@ const router = createBrowserRouter([
       {
         path:"services",
         element:<>
-        <Servicesection/>
+        <ServicePage/>
         </>
       },
       {
         path:"about",
         element:<>
-        <AboutSection/>
+        <AboutPage/>
         </>
       },
       {
         path:"projects",
         element:<>
-        <ProjectSection/>
+        <ProjectsPage/>
         </>
       }
     ]
