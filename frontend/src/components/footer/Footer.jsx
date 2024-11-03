@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
               <p>Freelancing Company</p>
             </div> */}
           </div>
-          <div className="text-sm text-gray-700">
+          <div className="text-xs sm:text-sm text-gray-700 flex flex-col space-y-2">
             <h3 className="font-bold mb-2">HEAD OFFICE</h3>
             <div className="space-y-2">
               <p>500 Terry Francine St,</p>
@@ -21,14 +22,14 @@ const Footer = () => {
               <p>info@mysite.com</p>
             </div>
           </div>
-          <div className="text-sm text-gray-700 space-y-2">
+          <div className="text-xs sm:text-sm text-gray-700 space-y-2 flex flex-col">
             <h3 className="font-bold mb-2">NAVIGATION</h3>
-            <p>Services</p>
-            <p>Projects</p>
-            <p>About us</p>
-            <p>Contact</p>
+            <NavLink to="/" className={({isActive})=>(isActive?"text-red-400":"")}>Home</NavLink>
+            <NavLink to="/services" className={({isActive})=>(isActive?"text-red-400":"")}>Services</NavLink>
+            <NavLink to="/projects" className={({isActive})=>(isActive?"text-red-400":"")}>Projects</NavLink>
+            <NavLink to="/about" className={({isActive})=>(isActive?"text-red-400":"")}>About Us</NavLink>
           </div>
-          <div className="text-sm text-gray-700 space-y-2">
+          <div className="text-xs sm:text-sm text-gray-700 space-y-2 flex flex-col">
             <h3 className="font-bold mb-2">FOLLOW US</h3>
             <p>Facebook</p>
             <p>Instagram</p>
