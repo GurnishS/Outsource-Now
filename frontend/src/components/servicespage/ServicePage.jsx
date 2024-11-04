@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
 import { faPlay, faArrowRight } from '@fortawesome/free-solid-svg-icons'; // Import specific icons
-
+import { NavLink } from 'react-router-dom';
 const ServicePage = () => {
   return (
     <div className="bg-white text-gray-900 mt-16">
@@ -11,7 +11,7 @@ const ServicePage = () => {
           <FontAwesomeIcon icon={faPlay} className="mr-2" /> OUR SERVICES {/* Replace <i> with FontAwesomeIcon */}
         </div>
         <h1 className="text-4xl font-light mb-6">
-            Diverse solutions tailored to your every need
+          Diverse solutions tailored to your every need
         </h1>
 
 
@@ -34,7 +34,7 @@ const ServicePage = () => {
               src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="App Development image"
               className="w-full h-auto mb-4 aspect-square object-cover"
-              
+
             />
             <h2 className="text-lg font-medium">App Development</h2>
             <p className="text-sm text-gray-600">
@@ -59,7 +59,7 @@ const ServicePage = () => {
               src="https://storage.googleapis.com/a1aa/image/c4SeKlNo2FTJYC9mgD1lKDWeMRB4mPEfgjxMIa6XyqLfN9YOB.jpg"
               alt="Digital marketer analyzing data"
               className="w-full h-auto mb-4"
-              
+
             />
             <h2 className="text-lg font-medium">Digital Marketing</h2>
             <p className="text-sm text-gray-600">
@@ -72,7 +72,7 @@ const ServicePage = () => {
               src="https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="Tutor teaching students"
               className="w-full mb-4 aspect-square object-cover"
-            
+
             />
             <h2 className="text-lg font-medium">Online Tutoring</h2>
             <p className="text-sm text-gray-600">
@@ -85,7 +85,7 @@ const ServicePage = () => {
               src="https://images.pexels.com/photos/3729557/pexels-photo-3729557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Doubt solving"
               className="w-full h-auto mb-4 aspect-square object-cover"
-              
+
             />
             <h2 className="text-lg font-medium">Doubt Solving</h2>
             <p className="text-sm text-gray-600">
@@ -95,15 +95,15 @@ const ServicePage = () => {
 
         </div>
         <div className="bg-lime-400 flex items-center justify-center min-h-36 md:min-h-48 mt-8">
-                <div className="text-center">
-                    <h1 className="text-xl md:text-3xl font-light text-black mb-4 md:mb-8 pop">
-                        Get an estimate for your upcoming project
-                    </h1>
-                    <button className="bg-black text-lime-400 py-2 px-4 text-sm font-bold pop">
-                        CONTACT
-                    </button>
-                </div>
-            </div>
+          <div className="text-center">
+            <h1 className="text-xl md:text-3xl font-light text-black mb-4 md:mb-8 pop">
+              Get an estimate for your upcoming project
+            </h1>
+            <NavLink to="/contact-us" className="bg-black text-lime-400 py-2 px-4 text-sm font-bold pop">
+              CONTACT
+            </NavLink>
+          </div>
+        </div>
       </div>
     </div>
   );

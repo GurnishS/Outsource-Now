@@ -1,9 +1,9 @@
 // src/components/AboutUs.js
 
 import React from 'react'; // Replace with your image path
-
-const AboutPage= () => {
-    const TeamImage="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600";
+import { NavLink } from 'react-router-dom';
+const AboutPage = () => {
+    const TeamImage = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600";
     return (
         <section className="bg-gray-100 pt-24" id="about">
             <div className="container mx-auto px-6">
@@ -12,10 +12,10 @@ const AboutPage= () => {
                 </h2>
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-8 md:mb-0">
-                        <img 
-                            src={TeamImage} 
-                            alt="Our Team" 
-                            className="rounded-lg shadow-lg" 
+                        <img
+                            src={TeamImage}
+                            alt="Our Team"
+                            className="rounded-lg shadow-lg"
                         />
                     </div>
                     <div className="md:w-1/2 md:pl-10">
@@ -39,9 +39,9 @@ const AboutPage= () => {
                     <h1 className="text-xl md:text-3xl font-light text-black mb-4 md:mb-8 pop">
                         Get an estimate for your upcoming project
                     </h1>
-                    <button className="bg-black text-lime-400 py-2 px-4 text-sm font-bold pop">
+                    <NavLink to="/contact-us" className="bg-black text-lime-400 py-2 px-4 text-sm font-bold pop">
                         CONTACT
-                    </button>
+                    </NavLink>
                 </div>
             </div>
         </section>

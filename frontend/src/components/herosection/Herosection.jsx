@@ -2,6 +2,7 @@ import React from 'react';
 import './../../index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'; // Import specific icon
+import { NavLink } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -24,13 +25,13 @@ const HeroSection = () => {
           <br />
           and sustainable growth for every project
         </p>
-        <a
-          href="#"
+        <NavLink
+          to="/services"
           className="flex items-center text-lg font-bold bg-yellow-400 text-black px-4 py-2"
         >
           <FontAwesomeIcon icon={faArrowRight} className={`mr-2 slide`}/> {/* Replace <i> with FontAwesomeIcon */}
           VIEW SERVICES
-        </a>
+        </NavLink>
       </div>
 
       {/* Decorative Shapes */}

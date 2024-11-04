@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';  // Import the FontAwesome component
 import { faArrowRight, faArrowLeft, faPlay } from '@fortawesome/free-solid-svg-icons';  // Import specific icons
 import "../../index.css"
+import { NavLink } from 'react-router-dom';
 
 const ProjectSection = () => {
   const slideshowRef = useRef(null);
@@ -28,9 +29,9 @@ const ProjectSection = () => {
         </div>
         <h1 className="text-4xl font-light mt-4">Discover our latest freelancing and consulting projects</h1>
         <div className="mt-8 flex items-center space-x-4 mb-16">
-            <button className="bg-black text-white p-4">
+            <NavLink to="/projects" className="bg-black text-white p-4">
             <FontAwesomeIcon icon={faArrowRight} />  {/* Use FontAwesomeIcon */}
-            </button>
+            </NavLink>
             <span className="text-gray-600 uppercase text-sm tracking-widest">More Projects</span>
         </div>
         <div className="mt-8 flex items-center space-x-4" style={{ height: '300px' }}>
@@ -104,9 +105,9 @@ const ProjectSection = () => {
                 <h1 className="text-3xl font-light text-black mb-8 pop">
                 Get a quote for your upcoming project
                 </h1>
-                <button className="bg-black text-lime-400 py-2 px-4 text-sm font-bold pop">
+                <NavLink to="/contact-us" className="bg-black text-lime-400 py-2 px-4 text-sm font-bold pop">
                 CONTACT
-                </button>
+                </NavLink>
             </div>
         </div>
     </>

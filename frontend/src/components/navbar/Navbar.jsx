@@ -39,7 +39,7 @@ const Navbar = () => {
         <NavLink to="/services" className={({ isActive }) => (isActive ? "text-red-600 border-b-2" : "text-black")}>Services</NavLink>
         <NavLink to="/projects" className={({ isActive }) => (isActive ? "text-red-600 border-b-2" : "text-black")}>Projects</NavLink>
         <NavLink to="/about" className={({ isActive }) => (isActive ? "text-red-600 border-b-2" : "text-black")} >About Us</NavLink>
-        <a className="bg-yellow-400 text-black py-2 px-4 text-sm font-bold" href="#">CONTACT US</a>
+        <NavLink to="/contact-us" className="bg-yellow-400 text-black py-2 px-4 text-sm font-bold">CONTACT US</NavLink>
       </div>
     </nav>
     <div className={`md:hidden ${isOpen ? 'fixed' : 'hidden'} right-0 h-full w-80 bg-white z-30`} style={{ top: "72px" }}>

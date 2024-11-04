@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';  // Import FontAwesomeIcon component
 import { faPlay, faArrowRight } from '@fortawesome/free-solid-svg-icons';  // Import specific icons
+import { NavLink } from 'react-router-dom';
 
 const AboutSection = () => {
   return (
@@ -25,13 +26,13 @@ const AboutSection = () => {
             Briefly explain who's behind it, what it does and what makes it
             unique. Share its core values and what this site has to offer.
           </p>
-          <a
-            href="#"
+          <NavLink
+            to="/about"
             className="inline-flex items-center bg-yellow-400 text-black px-4 py-2 font-semibold"
           >
             <FontAwesomeIcon icon={faArrowRight} className="mr-2" /> {/* Replaced <i> with FontAwesomeIcon */}
             LEARN MORE
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

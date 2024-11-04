@@ -10,6 +10,7 @@ import ProjectSection from './components/projectsection/Projectsection.jsx';
 import ServicePage from './components/servicespage/ServicePage.jsx';
 import ProjectsPage from './components/projectpage/ProjectPage.jsx';
 import AboutPage from './components/aboutuspage/AboutPage.jsx';
+import ContactPage from './components/contactuspage/ContactPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,12 @@ const router = createBrowserRouter([
         path:"projects",
         element:<>
         <ProjectsPage/>
+        </>
+      },
+      {
+        path:"contact-us",
+        element:<>
+        <ContactPage/>
         </>
       }
     ]
