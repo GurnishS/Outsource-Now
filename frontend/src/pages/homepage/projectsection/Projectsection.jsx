@@ -22,7 +22,7 @@ const ProjectSection = () => {
 
   return (
     <>
-        <div className="container mx-auto px-4 py-8 h-screen md:pt-24">
+        <div className="container mx-auto px-4 py-8 md:pt-24">
         <div className="flex items-center space-x-2 mt-4 mb-4">
             <FontAwesomeIcon icon={faPlay} className="text-gray-600" />  {/* Replace <i> with FontAwesomeIcon */}
             <span className="text-gray-600 uppercase text-sm tracking-widest">Recent Projects</span>
