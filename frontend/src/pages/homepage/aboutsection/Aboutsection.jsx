@@ -20,7 +20,7 @@ const AboutSection = () => {
             <FontAwesomeIcon icon={faPlay} className="text-white mr-2" /> {/* Replaced <i> with FontAwesomeIcon */}
             <span className="uppercase tracking-widest">About</span>
           </div>
-          <h1 className="text-5xl font-bold mb-4">About Outsource Now</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">About Outsource Now</h1>
           <p className="text-lg mb-6">
             This is the space to introduce visitors to the freelancing agency.
             Briefly explain who's behind it, what it does and what makes it
@@ -28,7 +28,7 @@ const AboutSection = () => {
           </p>
           <NavLink
             to="/about"
-            className="inline-flex items-center bg-yellow-400 text-black px-4 py-2 font-semibold"
+            className="inline-flex items-center bg-yellow-400 text-black px-4 py-2 font-semibold text-sm sm:text-lg"
           >
             <FontAwesomeIcon icon={faArrowRight} className="mr-2" /> {/* Replaced <i> with FontAwesomeIcon */}
             LEARN MORE

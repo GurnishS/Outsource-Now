@@ -2,11 +2,12 @@
 
 import React from 'react'; // Replace with your image path
 import { NavLink } from 'react-router-dom';
+import BannerStrip from '../../components/bannerstrip/BannerStrip';
 const AboutPage = () => {
     const TeamImage = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600";
     return (
         <section className="bg-gray-100 pt-24" id="about">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-6 mb-10">
                 <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
                     About Us
                 </h2>
@@ -34,16 +35,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-lime-400 flex items-center justify-center min-h-36 md:min-h-48 mt-10">
-                <div className="text-center">
-                    <h1 className="text-xl md:text-3xl font-light text-black mb-4 md:mb-8 pop">
-                        Get an estimate for your upcoming project
-                    </h1>
-                    <NavLink to="/contact-us" className="bg-black text-lime-400 py-2 px-4 text-sm font-bold pop">
-                        CONTACT
-                    </NavLink>
-                </div>
-            </div>
+            <BannerStrip message="Get an estimate for your upcoming project" />
         </section>
     );
 };

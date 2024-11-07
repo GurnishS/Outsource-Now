@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';  // Import the FontAwesome component
 import { faArrowRight, faArrowLeft, faPlay } from '@fortawesome/free-solid-svg-icons';  // Import specific icons
-import "../../index.css"
 import { NavLink } from 'react-router-dom';
+import BannerStrip from '../../../components/bannerstrip/BannerStrip';
 
 const ProjectSection = () => {
   const slideshowRef = useRef(null);
@@ -100,16 +100,7 @@ const ProjectSection = () => {
         </div>
         
         </div>
-        <div className="bg-lime-400 flex items-center justify-center min-h-48">
-            <div className="text-center">
-                <h1 className="text-3xl font-light text-black mb-8 pop">
-                Get a quote for your upcoming project
-                </h1>
-                <NavLink to="/contact-us" className="bg-black text-lime-400 py-2 px-4 text-sm font-bold pop">
-                CONTACT
-                </NavLink>
-            </div>
-        </div>
+        <BannerStrip message="Get a quote for your upcoming project"/>
     </>
   );
 };

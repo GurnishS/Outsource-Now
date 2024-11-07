@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
 import { faPlay, faArrowRight } from '@fortawesome/free-solid-svg-icons'; // Import specific icons
 import { NavLink } from 'react-router-dom';
+import BannerStrip from '../../components/bannerstrip/BannerStrip';
 const ServicePage = () => {
   return (
     <div className="bg-white text-gray-900 mt-16">
@@ -16,7 +17,7 @@ const ServicePage = () => {
 
 
         {/* Service Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-2 md:mb-10">
           <div className="text-center">
             <img
               src="https://storage.googleapis.com/a1aa/image/r2LATNc1I2ZsNhTbeyuHqTj4TeRPNBj8WoZeuZn6zskAneYOB.jpg"
@@ -94,17 +95,8 @@ const ServicePage = () => {
           </div>
 
         </div>
-        <div className="bg-lime-400 flex items-center justify-center min-h-36 md:min-h-48 mt-8">
-          <div className="text-center">
-            <h1 className="text-xl md:text-3xl font-light text-black mb-4 md:mb-8 pop">
-              Get an estimate for your upcoming project
-            </h1>
-            <NavLink to="/contact-us" className="bg-black text-lime-400 py-2 px-4 text-sm font-bold pop">
-              CONTACT
-            </NavLink>
-          </div>
-        </div>
       </div>
+      <BannerStrip message="Your Request, Our Mission" />
     </div>
   );
 };

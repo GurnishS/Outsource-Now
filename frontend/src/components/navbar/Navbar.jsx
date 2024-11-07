@@ -39,10 +39,10 @@ const Navbar = () => {
         <NavLink to="/services" className={({ isActive }) => (isActive ? "text-red-600 border-b-2" : "text-black")}>Services</NavLink>
         <NavLink to="/projects" className={({ isActive }) => (isActive ? "text-red-600 border-b-2" : "text-black")}>Projects</NavLink>
         <NavLink to="/about" className={({ isActive }) => (isActive ? "text-red-600 border-b-2" : "text-black")} >About Us</NavLink>
-        <NavLink to="/contact-us" className="bg-yellow-400 text-black py-2 px-4 text-sm font-bold">CONTACT US</NavLink>
+        <NavLink to="/contact-us" className="bg-yellow-400 text-black py-2 px-4 text-sm font-bold focus:motion-preset-confetti">CONTACT US</NavLink>
       </div>
     </nav>
-    <div className={`md:hidden ${isOpen ? 'fixed' : 'hidden'} right-0 h-full w-80 bg-white z-30`} style={{ top: "72px" }}>
+    <div className={`md:hidden ${isOpen ? 'fixed' : 'hidden'} right-0 h-full w-80 bg-white z-30 motion-preset-slide-left`} style={{ top: "72px" }}>
       <div className="flex flex-col p-8 space-y-4 border-2 h-full">
 
         <NavLink className={({isActive})=>(isActive?"text-red-600 border-b-2 text-center text-lg border-red-200":"text-black border-b-2 text-center text-lg")} to="/">Home</NavLink>

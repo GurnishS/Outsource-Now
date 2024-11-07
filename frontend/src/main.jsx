@@ -3,14 +3,11 @@ import { createRoot } from 'react-dom/client'
 import {RouterProvider, createBrowserRouter} from 'react-router-dom';
 import './index.css'
 import Layout from "./Layout.jsx"
-import HeroSection from './components/herosection/Herosection.jsx';
-import Servicesection from './components/servicesection/Servicesection.jsx';
-import AboutSection from './components/aboutsection/Aboutsection.jsx';
-import ProjectSection from './components/projectsection/Projectsection.jsx';
-import ServicePage from './components/servicespage/ServicePage.jsx';
-import ProjectsPage from './components/projectpage/ProjectPage.jsx';
-import AboutPage from './components/aboutuspage/AboutPage.jsx';
-import ContactPage from './components/contactuspage/ContactPage.jsx';
+import HomePage from './pages/homepage/HomePage.jsx';
+import ServicePage from './pages/servicespage/ServicePage.jsx';
+import ProjectsPage from './pages/projectpage/ProjectPage.jsx';
+import AboutPage from './pages/aboutuspage/AboutPage.jsx';
+import ContactPage from './pages/contactuspage/ContactPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,10 +17,7 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<>
-        <HeroSection />
-        <Servicesection/>
-        <AboutSection />
-        <ProjectSection />
+        <HomePage/>
         </>
       },
       {

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import Font
 
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
+import BannerStrip from '../../components/bannerstrip/BannerStrip';
 
 function ProjectsPage() {
 
@@ -43,22 +44,13 @@ function ProjectsPage() {
             </div>
             <div className="flex colums-3 flex-wrap p-2 md:p-8">
                 {projects.map((project) => (<div className='w-1/3'>
-                    <img src={project.url} className="object-cover h-24 w-full p-1 sm:h-40 md:h-64 lg:h-80 md:p-2 md:hover:p-3 ease-out duration-700" />
+                    <img src={project.url} className="object-cover h-24 w-full p-1 sm:h-40 md:h-64 lg:h-80 md:p-2 md:hover:p-3 ease-out duration-700 motion-scale-in-[0.5] motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.35s] motion-duration-[0.53s]/scale motion-duration-[0.53s]/translate motion-duration-[0.63s]/rotate" />
                     <h3 className='relative bottom-6 text-gray-50 text-xs left-2 md:bottom-12 md:left-8'>{project.title}</h3>
                 </div>
                 ))}
 
             </div>
-            <div className="bg-lime-400 flex items-center justify-center min-h-36 md:min-h-48">
-                <div className="text-center">
-                    <h1 className="text-xl md:text-3xl font-light text-black mb-4 md:mb-8 pop">
-                        Get an estimate for your upcoming project
-                    </h1>
-                    <NavLink to="/contact-us" className="bg-black text-lime-400 py-2 px-4 text-sm font-bold pop">
-                        CONTACT
-                    </NavLink>
-                </div>
-            </div>
+            <BannerStrip message="Get an estimate for your upcoming project" />
         </div>
     )
 }
