@@ -91,6 +91,22 @@ Contributions are welcome! If you'd like to contribute:
 
 ---
 
+## Screenshots
+
+![Screenshot from 2025-01-27 18-42-44](https://github.com/user-attachments/assets/213bfbd4-5bb1-4c1d-acdc-b3a53b5d7204)
+
+![Screenshot from 2025-01-27 18-42-52](https://github.com/user-attachments/assets/a94a0c8a-86ce-46a3-bf67-6df78782fbd2)
+
+![Screenshot from 2025-01-27 18-43-20](https://github.com/user-attachments/assets/6e3ed46f-d7c2-4c42-bd00-96eb9c175c26)
+
+![Screenshot from 2025-01-27 18-43-33](https://github.com/user-attachments/assets/b19f2f36-297d-4b5c-aff0-b5dba425457b)
+
+![Screenshot from 2025-01-27 18-43-41](https://github.com/user-attachments/assets/1770ab7c-4e51-423e-a57f-fadb98b94688)
+
+![Screenshot from 2025-01-27 18-43-47](https://github.com/user-attachments/assets/617e1d8b-3fd8-4ee9-acc9-1b55b1edfe4d)
+
+---
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
